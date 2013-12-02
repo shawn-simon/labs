@@ -12,7 +12,6 @@ module.exports.printMatrix = function(matrix) {
 	})
 }
 
-
 function Node(data) {
 	var that = this;
 	this.next = null;
@@ -56,6 +55,34 @@ module.exports.printNode = function(head)
 	    n = n.next;
 	}
 	console.log(data.join('-'))
+}
+
+module.exports.Queue = function()
+{
+	this._first = null;
+	this._last = null;
+
+	var that = this;
+	this.enqueue = function(data) {
+		if (that._first == null)
+		{
+			that._last = new Node(data);
+			that._first = that._last;
+		}
+		else
+		{
+			that._last.next = new Node(data)
+			that._last = that._last.next;	
+		}
+	} 
+	this.dequeue = function(data)
+	{
+		if (that._first == null) return null;
+		var result = that._first.data;
+		that._first = that._first.next;
+		return result;
+	}
+
 }
 
 module.exports.data = {};
