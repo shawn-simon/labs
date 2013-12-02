@@ -6,12 +6,19 @@ Strings
 
 1.1 When looping thru strings, use charAt instead of split()
 
+LinkedList
+
+2.7 My solution is fast and easy, but only because it's in JavaScript. Maybe re-read this one later.
 
 Random
 
 1.1 Instead of using a dictionary (which is I believe the same as a hash?) I could have used an array of booleans if they are ascii characters. TODO: Look up difference in lookup time and construction of an array vs a dictionary.
 
-1.8 Cool substring rotation trick.
+1.8  Has a cool substring rotation trick.
 
 
 2.1 When they ask for an alternate solution that takes less storage space, sometimes a n^2 solution is fine.
+
+Notes
+
+3.1 I didn't complete the followup's code. Can be done pretty easy in JS with splice.
