@@ -1,38 +1,4 @@
-
-/*Katie's Cell 415-359-7013
-
-Sudoku Solution Validator
-
-A sudoku board contains 81 cells arranged in a 9x9 grid. The game has 3 basic "units": rows, columns and boxes. Boxes are the 3x3 "minigrids". A valid solution consists of a grid in which all units contain the digits 1-9. Here's a picture of one:
-
-http://www.thedailyaztec.com/content/uploads/Sudoku_5-10.jpg
-
-You could represent a grid as a string, where each character represents a cell, starting in the top-left corner and moving row-by-row down to the bottom-right. For example, the string representing the grid in the above picture would be:
-
-grid = "357964281468123579912587463631795842724318695895246137176459328583672914249831758"
-
-Please write the following function:
-
-def is_valid_solution(grid):
-
-It should take a string (either str or unicode) and return a boolean: True if the string represents a valid sudoku solution (i.e., all rows, columns and boxes each contain 1-9), False if not.
-
-Two things before starting:
-
-Do not throw an exception. Return True if the grid is valid and False under all other circumstances. Assume nothing about grid. Obviously, it needs to be a string that's 81 characters long, but it might not be. It could, for instance, be an integer or the string "hello". Again, if so, just return False.
-
-Do not worry about performance. Optimize for code clarity.
-
-Test Cases:
-
-751843926893625174642179583425316798176982345938754612364297851289531467517468239
-
-751843927893625174642179583425316798176982345938754612364297851289531467517468239
-
-571843926893625174642179583425316798176982345938754612364297851289531467517468239
-
-851743926693825174142679583425316798976182345738954612364297851289531467517468239
-*/
+// Soduku Validator
 
 function is_valid_solution(grid) 
 {
