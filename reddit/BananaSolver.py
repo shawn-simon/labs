@@ -1,7 +1,4 @@
 
-#Shawn Simon
-#trisma@gmail.com
-
 class BananaSolver:
 	
 	def __init__(self):
