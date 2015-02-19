@@ -1,0 +1,41 @@
+/*
+Javascript template engine.
+
+The template engine needs to handle two things:
+- Variable substitution. {{variable}}
+- If-statements. {{#if variable}}content{{/if}}
+
+The API:
+templateEngine.load(selector) -> template
+template.render(variables) -> html
+
+For example, given the following template:
+
+<script id="entry-template" type="text/x-js-template">
+  <div class="entry">
+    <h1>Welcome {{name}}</h1>
+    <div class="body">
+      {{body}}
+    </div>
+    {{#if loggedIn}}
+      Logout {{name}}
+    {{/if}}
+  </div>
+</script>
+
+We should be able to load the template:
+var template = templateEngine.load("#entry-template");
+
+And then render it with any set of variables:
+var html = template.render({name: "Shawn", body: "Some content", loggedIn: true});
+
+Render should return:
+
+<div class="entry">
+  <h1>Welcome Shawn</h1>
+  <div class="body">
+    Some content
+  </div>
+  Logout Shawn
+</div>
+*/
