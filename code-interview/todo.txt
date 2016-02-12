@@ -1,4 +1,4 @@
-9.6 all valid combos of parenthesis
+* 9.6 all valid combos of parenthesis
 9.7 paint fill
 9.8 infinite coins
 9.9 queens sharing a diagonal
