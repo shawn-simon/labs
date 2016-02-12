@@ -1,7 +1,7 @@
 // return all subsets of a set.
 
 'use strict';
-let list = [1, 2, 3]
+let list = [0, 1, 2, 3, 4, 5]
 
 console.log(getAllSubsets(list))
 
@@ -18,7 +18,7 @@ function getAllSubsets(list) {
       }
       index++;
     }
-    results.push(combo)
+    if (combo.length === 2) results.push(combo)
   }
   return results
 }

@@ -10,4 +10,8 @@ the anagrams are next to each other
 * 11.5 sort tsrings with empty spaces interspersed in array
 11.6 given an mxn matrix, sort
 11.7
-11.8
+*11.8
+
+subsequences...
+longest common subsequence
+longest increasing subsequence
